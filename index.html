@@ -1,0 +1,1058 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- custom CSS Link -->
+	<link rel="stylesheet" href="style.css">
+
+	<!--Import CDN-link of tailwind CSS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<!--Import Swiper's CSS link -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+</head>
+
+<body style="overflow-x: hidden;">
+
+	<!-- navbar  -->
+	<section class="navbar">
+		<nav class="container mx-auto navbar_Con relative px-10 py-4 flex flex-wrap justify-between items-center ">
+			<!-- logo -->
+			<a class="" href="index.html">
+				<img src="images/Logo_nordic.png" alt="">
+			</a>
+			<!-- menu-bar for mobile-view -->
+			<div class="lg:hidden">
+				<button class="navbar-burger flex items-center text-black p-3">
+					<svg class="block h-8 w-8  fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+						<title>Mobile menu</title>
+						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+					</svg>
+				</button>
+			</div>
+
+			<!-- list -->
+			<ul class="hidden navbar pr-5 pl-4 py-4 lg:mx-auto lg:flex flex-col gap-2 lg:flex-row p-4 lg:p-0">
+				<li><a class="text-sm text-black mr-5 font-bold hover:text-gray-500 " href="product.html">Products</a>
+				</li>
+				<li><a class="text-sm text-black mr-5 font-bold hover:text-gray-500" href="trading.html">Trading
+						Tools</a></li>
+				<li><a class="text-sm text-black mr-5 font-bold hover:text-gray-500" href="platform.html">Platforms</a>
+				</li>
+				<li><a class="text-sm text-black mr-5 font-bold hover:text-gray-500"
+						href="condition.html">Conditions</a></li>
+				<li><a class="text-sm text-black mr-5   font-bold hover:text-gray-500" href="help.html">Help</a></li>
+			</ul>
+			<!-- buttons -->
+			<a class="black_btn hidden lg:inline-block lg:ml-auto lg:mr-3 text-center  " href="trading.html">Start
+				Trading</a>
+			<a class="white_btn_b  hidden lg:inline-block  text-center    transition duration-200" href="sigIn.html"
+				id="">Log In</a>
+		</nav>
+		<!-- navbar_for mobile view -->
+		<div class="navbar-menu relative z-50 hidden ">
+			<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+			<nav
+				class="fixed top-0 right-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+				<div class="flex items-center mb-8">
+					<a class="mr-auto text-3xl font-bold leading-none" href="#">
+						<img src="images/Logo_nordic.png" alt="">
+					</a>
+					<button class="navbar-close">
+						<svg class="h-6 w-6 text-black cursor-pointer hover:text-gray-500"
+							xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M6 18L18 6M6 6l12 12">
+							</path>
+						</svg>
+					</button>
+				</div>
+				<div>
+					<ul>
+						<li class="mb-1">
+							<a class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded"
+								href="product.html">Products</a>
+						</li>
+						<li class="mb-1">
+							<a class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded"
+								href="trading.html">Trading Tools</a>
+						</li>
+						<li class="mb-1">
+							<a class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded"
+								href="platform.html">Platforms</a>
+						</li>
+						<li class="mb-1">
+							<a class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded"
+								href="condition.html">Conditions</a>
+						</li>
+						<li class="mb-1">
+							<a class="block p-4 text-sm font-semibold text-black hover:bg-blue-50 hover:text-blue-600 rounded"
+								href="help.html">Help</a>
+						</li>
+					</ul>
+					<div class="flex justify-between items-center flex-col x">
+						<a class="lg:hidden lg:ml-auto lg:mr-3 ml-auto py-5 w-full mt-40  px-7 bg-black b_btn_hover text-center text-white font-bold rounded-full  "
+							href="trading.html">Start Trading</a>
+						<a class="white_btn_b  lg:hidden py-5 px-12 e font-bold 0 mt-5 w-full text-center text-gray-900 font-bold  rounded-full  bg-white w_btn_hover border-4 border-solid"
+							href="sigIn.html">Log In</a>
+					</div>
+				</div>
+
+			</nav>
+		</div>
+
+	</section>
+
+
+	<!-- section-1: Empowering-->
+	<div class="empowering_Cont container relative z-[1] ">
+		<div class="grid  grid-cols-6 xl:grid-cols-12 pt-[96px]  ">
+			<!-- left-column -->
+			<div class="empowering-left-part col-span-6 lg:col-span-6   order-2  xl:order-2 2xl:order-1">
+				<div class="empowering_text">
+					<h6
+						class="hidden xl:block mb-6  font-extrabold text-5xl leading-tight 2xl:text-6xl 2xl:mb-8 2xl:leading-snug  ">
+						Empowering You To Trade The Nordic <br> Way: Together, <br>
+						We Conquer <br>
+						the Markets.</h6>
+					<h6
+						class="block xl:hidden  mb-6  font-extrabold text-5xl leading-tight 2xl:text-6xl 2xl:mb-8 2xl:leading-snug  ">
+						Empowering You To Trade The Nordic Way: Together,
+						We Conquer
+						the Markets.</h6>
+					<p class="mb-3 2xl:mb-8 ">Experience Nordic Trading at its finest with our
+						eco-conscious, Swedish-based broker. We
+						operate with integrity, transparency,
+						and a commitment to Nordic values, backed by reliable top-tier security and strict
+						regulatory oversight.</p>
+
+					<div class="empowering_sec_btn ">
+						<a class="blue_btn_b lg:mr-3  transition duration-200" href="#">Start Now</a>
+						<a class="white_btn  transition duration-200" href="#">Start Now</a>
+					</div>
+
+				</div>
+
+
+			</div>
+			<!-- right-column-->
+			<div class="col-span-6 lg:col-span-6 items-center order-1 xl:order-2">
+				<div class="home-image  ">
+					<img class="w-full" src="images/invest.png" title="" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- company-logos -->
+	<div class="container company_logos pt-8 xl:pt-0  pb-4 ">
+		<div class="w-28 md:w-32 lg:w-36  mb-4" data-wow-delay=".1s"
+			style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+			<img class="" src="images/forbes-white.png" alt="">
+		</div>
+		<div class="w-28 md:w-32 lg:w-36  mb-4" data-wow-delay=".3s"
+			style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+			<img class="" src="images/fortune-white.png" alt="">
+		</div>
+		<div class="w-28 md:w-32 lg:w-36  mb-4" data-wow-delay=".5s"
+			style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+			<img class="" src="images/nasdaq-white.png" alt="">
+		</div>
+		<div class="w-28 md:w-32 lg:w-36 px-10  mb-4" data-wow-delay=".7s"
+			style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+			<img class="" src="images/sky-white.png" alt="">
+		</div>
+		<div class="w-28 md:w-32 lg:w-36  mb-4 " data-wow-delay=".9s"
+			style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInUp;">
+			<img class="" src="images/amazon-white.png" alt="">
+		</div>
+		<div class="w-28 md:w-32 lg:w-36  mb-4 wow animate__ animate__fadeInUp" data-wow-delay=".9s"
+			style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInUp;">
+			<img class="" src="images/bloomberg-white.png" alt="">
+		</div>
+	</div>
+
+	<!-- section-2: Choose account -->
+	<div class="hidden sm:block container mx-auto my-20  choose_sec">
+		<!-- title of section -->
+		<div class="grid grid-cols-1 md:grid-cols-2 items-end gap-6 ">
+			<div class="max-w-[461px]">
+				<h2 class="">Choose account type
+				</h2>
+			</div>
+		</div>
+		<!-- cards  -->
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3  gap-6 mt-10 ">
+			<!-- card:1 ECN Account -->
+			<div class="ecn_sec mb-0 rounded-[46px] bg-slate-50 flex flex-col"
+				style="box-shadow: 12px 12px 100px rgba(0, 0, 0, 0.06);">
+				<div class="ecn_top_sec bg-white hover:shadow-custom  px-6 pb-3  rounded-[48px]">
+					<img src="images/ECN_account.png" alt="" class="pt-4">
+					<h4 class=" mt-6 ">ECN Account</h4>
+					<p class="mt-2 ">Our ECN Account offers the lowest
+						trading fees in
+						the industry. Forget about requotes, commissions.</p>
+					<div class="flex items-center mt-6 md:mt-12 mb-4 gap-5">
+						<a class="green_btn mr-2 py-4 text-center w-[180px] h-[54px] " href="#">Buy account</a>
+						<a class="gray_white_btn mr-2 py-4 text-center  w-[180px] h-[54px]" href="#">Learn more</a>
+					</div>
+				</div>
+				<div class="px-6 pb-12 bg-slate-50  rounded-b-[46px] ">
+					<ul
+						class="max-w-md space-y-1 text-sm md:text-base leading-[22px] text-gray-500 list-inside font-normal dark:text-gray-400 mt-6">
+						<li class="flex items-start py-2  border border-t-0 border-l-0 border-r-0  border-gray-100 ">
+							<img src="images/tick_circle.png" alt="" class="mr-3">
+							1:200 Leverage – Boost your returns with leverage.
+						</li>
+						<li class="flex items-start py-2  border border-t-0 border-l-0 border-r-0 border-gray-100">
+							<img src="images/tick_circle.png" alt="" class="mr-3">
+							Tight Spreads – Keep the costs low with spreads starting at 0.0. pips and zero requotes.
+						</li>
+						<li class="flex items-start py-2  border border-t-0 border-l-0 border-r-0  border-gray-100">
+							<img src="images/tick_circle.png" alt="" class="mr-3">
+							Low Deposit – Start trading instantly with minimum deposit.
+						</li>
+						<li class="flex items-start py-2  border border-t-0 border-l-0 border-r-0  border-gray-100">
+							<img src="images/tick_circle.png" alt="" class="mr-3">
+							Micro Lots – Trade micro lots to fine-tune your strategies.
+						</li>
+						<li class="flex items-start py-2  border border-t-0 border-l-0 border-r-0  border-gray-100">
+							<img src="images/tick_circle.png" alt="" class="mr-3">
+							Low Commissions – Nordic Markets has competitive commissions at only $9 per round trip.
+						</li>
+						<li class="flex items-start py-2">
+							<img src="images/tick_circle.png" alt="" class="mr-3">
+							Tier 1 Liquidity – Get access to the liquidity pool of tier-1 banks via Nordic Markets.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--  card:2 Premium Account -->
+			<div class="premium_sec mb-0 h-fit rounded-[48px] bg-c-b flex flex-col"
+				style="border: 12px solid rgba(0, 0, 0, 0.1);">
+				<div class="premium_top_sec hover:shadow-custom text-white bg-c-b px-6 pb-3  rounded-[48px]">
+					<img src="images/premium_account.png" alt="" class="pt-4">
+					<h4 class="text-lg md:text-2xl leading-8 font-bold mt-4 ">Premium Account</h4>
+					<p class="mt-2 text-sm leading-5 text-dark-light font-normal">Our Premium Account provides
+						exceptional conditions with maximum returns for traders confident in their strategy. </p>
+					<div class="flex items-center mt-8 mb-0 gap-5">
+						<a class=" mt-2 mr-2 py-4 text-center  w-[180px] h-[54px] bg-white  text-sm text-black hover:text-black font-bold  rounded-full transition duration-200 "
+							href="#">Buy account</a>
+						<a class="blue_btn_wb mt-2 text-center mr-3 py-4 w-[180px] h-[54px]   hover:bg-black text-sm text-white font-bold rounded-full transition duration-200 "
+							href="#">Learn more</a>
+					</div>
+				</div>
+				<div class="px-6 pb-14 pt-6">
+					<ul
+						class="max-w-md space-y-1 text-sm md:text-base leading-[22px] text-white list-inside font-normal dark:text-gray-400 mt-6">
+						<li class="flex items-start py-2 border border-t-0 border-l-0 border-r-0  border-bb ">
+							<img src="images/tick_circle_white.png" alt="" class="mr-3">
+							1:100 Leverage – Boost your returns with leverage.
+						</li>
+						<li class="flex items-start py-2  border border-t-0 border-l-0 border-r-0  border-bb   ">
+							<img src="images/tick_circle_white.png" alt="" class="mr-3">
+							Tight Spreads - Keep the costs low with spreads starting at 0.0. pips and zero requotes.
+						</li>
+						<li class="flex items-start py-2  border border-t-0 border-l-0 border-r-0  border-bb ">
+							<img src="images/tick_circle_white.png" alt="" class="mr-3">
+							Low Deposit – Start trading instantly with minimum deposit.
+						</li>
+						<li class="flex items-start py-2  border border-t-0 border-l-0 border-r-0  border-bb">
+							<img src="images/tick_circle_white.png" alt="" class="mr-3">
+							Micro Lots – Trade micro lots to fine-tune your strategies.
+						</li>
+						<li class="flex items-start py-2  border border-t-0 border-l-0 border-r-0  border-bb ">
+							<img src="images/tick_circle_white.png" alt="" class="mr-3">
+							Zero Commissions – Forget about commissions. We don’t charge you anything; no hidden fees
+						</li>
+						<li class="flex items-start py-2">
+							<img src="images/tick_circle_white.png" alt="" class="mr-3">
+							Tier 1 Liquidity – Get access to the liquidity pool of tier-1 banks via Nordic Markets.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- card:3 Standart Account -->
+			<div class="standard_sec mb-0 rounded-[46px] bg-slate-50 flex flex-col"
+				style="box-shadow: 12px 12px 100px rgba(0, 0, 0, 0.06);">
+				<div class="standard_top_sec bg-white hover:shadow-custom  px-6 pb-3  rounded-[48px]">
+					<img src="images/standard_account.png" alt="" class="pt-4">
+					<h4 class="mt-6 ">Standart Account</h4>
+					<p class="mt-2 ">Explore our most popular account type
+						with no trading commissions and high leverage</p>
+					<div class="flex items-center mt-10 mb-0">
+						<a class="bg-black mt-2 text-center mr-3 py-4  w-[131px] h-[54px] lg:w-[180px] lg:h-[54px]    b_btn_hover	 text-sm text-white font-bold rounded-full transition duration-200 "
+							href="#">Buy account</a>
+						<a class="gray_white_btn mt-2" href="#">Learn more</a>
+					</div>
+				</div>
+				<div class="px-6  pb-13 bg-slate-50  rounded-b-[46px] ">
+					<ul
+						class="max-w-md space-y-1 text-sm md:text-base leading-[22px] text-gray-500 list-inside font-normal dark:text-gray-400 mt-10">
+						<li class="flex items-start py-2  border border-t-0 border-l-0 border-r-0  border-gray-100 ">
+							<img src="images/tick_circle.png" alt="" class="mr-3">
+							1:200 Leverage – Boost your returns with leverage.
+						</li>
+						<li class="flex items-start py-2  border border-t-0 border-l-0 border-r-0 border-gray-100">
+							<img src="images/tick_circle.png" alt="" class="mr-3">
+							Tight Spreads – Keep the costs low with spreads starting at 0.0. pips and zero requotes.
+						</li>
+						<li class="flex items-start py-2  border border-t-0 border-l-0 border-r-0  border-gray-100">
+							<img src="images/tick_circle.png" alt="" class="mr-3">
+							Low Deposit – Start trading instantly with minimum deposit.
+						</li>
+						<li class="flex items-start py-2  border border-t-0 border-l-0 border-r-0  border-gray-100">
+							<img src="images/tick_circle.png" alt="" class="mr-3">
+							Micro Lots – Trade micro lots to fine-tune your strategies.
+						</li>
+						<li class="flex items-start py-2  border border-t-0 border-l-0 border-r-0  border-gray-100">
+							<img src="images/tick_circle.png" alt="" class="mr-3">
+							Low Commissions – Nordic Markets has competitive commissions at only $9 per round trip.
+						</li>
+						<li class="flex items-start py-2">
+							<img src="images/tick_circle.png" alt="" class="mr-3">
+							Tier 1 Liquidity – Get access to the liquidity pool of tier-1 banks via Nordic Markets.
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- section-3: Diversify your portfolio -->
+	<div class="container mx-auto diversify_sec mt-56">
+		<!-- first row -->
+		<div class="diversify_top_sec grid  grid-cols-6 xl:grid-cols-12 gap-6">
+			<!-- left- title -->
+			<div class="left_card_sec col-span-5 lg:col-span-5 ">
+				<h2 class="">Diversify your
+					portfolio</h2>
+				<h6 class="text-xl font-normal my-4">Forex Trading, Indices Trading, Oil Trading, Precious Metal
+					Trading,
+					Spread Betting, CFD
+					Trading </h6>
+				<p class="text-base font-normal text-gray-400 my-4">No hidden fees, Swedish-based, Nordic values,
+					eco-conscious brand,
+					secure top tier security, reliable regulated by a country that holds
+					accountability to companies to lead by Nordic values.</p>
+			</div>
+			<!-- right- card -->
+			<div class="right_card_sec col-span-7 lg:col-span-7   gap-11  ">
+				<!-- card:1 -->
+				<div class="tesla_card p-6 ">
+					<img src="images/tesla_logo.png" alt="">
+					<div class="flex justify-between items-baseline	mt-12 ">
+						<h4 class=" mt-16 f">Tesla <br> <span class="text-black-400 text-xs font-bold">TSLA</span></h4>
+						<h6 class="text-red-400 text-[22px] pt-3">-2.3%</h6>
+					</div>
+				</div>
+				<!-- card:2 -->
+				<div class="fb_card p-6  ">
+					<img src="images/meta_logo.png" alt="">
+					<div class="flex justify-between items-baseline	 mt-12">
+						<h4 class="text-[22px] leading-8 font-semibold mt-16 leading-5">Facebook <br> <span
+								class="text-black-400 text-xs font-bold">FB</span></h4>
+						<h6 class="text-green-400 text-[22px] pt-3">+ 3.36%</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  second row -->
+		<div class="diversify_bottom_sec mt-11 grid grid-cols-6 xl:grid-cols-12 flex  gap-6">
+			<!-- left  buttons -->
+			<div class="left_card_sec col-span-8 flex flex-col items-start mt-10 col-span-2">
+				<a class=" blue_btn_b lg:mr-3  transition duration-200" href="#">Buy account</a>
+				<div class="flex flex-wrap gap-6 mt-10">
+					<a class=" gray_white_btn  " href="#">Forex Trading </a>
+					<a class="  gray_white_btn " href="#">IIndices Trading </a>
+					<a class="  gray_white_btn  " href="#">Oil Trading</a>
+				</div>
+				<div class="flex flex-wrap gap-6 ml-28 mt-10">
+					<a class="  gray_white_btn  " href="#">Spread Betting </a>
+					<a class="  gray_white_btn " href="#">CFD Trading </a>
+					<a class="  gray_white_btn  " href="#">Precious Metals </a>
+				</div>
+			</div>
+			<!-- right card -->
+			<div class="right_card_sec col-span-4 grid grid-cols-1    md:grid-cols-1 lg:grid-cols-1 gap-6 ">
+				<div class="spotify_card p-6  bg-white hover:shadow-custom duration-300 rounded-[46px]">
+					<img src="images/spotify_logo.png" alt="">
+					<div class="flex justify-between items-baseline flex-wrap	 mt-12">
+						<h4 class="mt-16 ">Spotify <br> <span class="pt-4">SPOT</span></h4>
+
+						<h6 class=" pt-3">+ 3.36%</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- section-4: Open Account -->
+	<div class="container open_account-sec mx-auto my-20">
+		<div class="min-w-screen min-h-screen flex items-center justify-center  py-5">
+			<div class="bg-white text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden">
+				<div class="flex md:w-full w-full flex flex-col  lg:flex-row xl:flex-row 2xl:flex-row">
+					<!-- left image  -->
+					<div class=" md:block w-auto lg:h-full bg-white py-10 pl-10">
+						<img src="images/contact.png" alt="">
+					</div>
+					<!-- right form -->
+					<div class="w-auto open_account-form_sec lg:w-1/2 xl:w-1/2 2xl:w-1/2 py-10 px-5 md:px-10">
+						<div class=" mb-6 px-8">
+							<h1 class="">Open Account</h1>
+							<p class="py-2 ">The world of trading is just a click away. Fill in a
+								short
+								form and get instant access to the
+								best trading tools, with no hidden fees. </p>
+						</div>
+						<!-- form -->
+						<div class="open_account-form mb-10">
+							<!-- input field:1 -->
+							<input type="text" class=" w-full  mb-3 border-2 border-gray-200 outline-none"
+								placeholder="Name">
+							<!-- input field:2 -->
+							<input type="email"
+								class="w-full my-3 pl-10 pr-3  rounded-[46px] border-2 border-gray-200 outline-none focus:border-indigo-500"
+								placeholder="E-mail">
+							<!-- input field:3 -->
+							<div class="my-3" x-data="{ show: true }">
+								<div class="relative">
+									<input placeholder="Password" :type="show ? 'password' : 'text'"
+										class="text-md pl-10 block px-3 py-2 rounded-[46px] w-full  bg-white border-2 border-gray-200   focus:border-indigo-500    focus:outline-none">
+									<div
+										class="password_view_hide  inset-y-0 right-0 pr-3 flex items-center text-sm leading-5">
+
+										<img src="images/View_icon.png" alt="" class="h-6 text-gray-700" fill="none"
+											@click="show = !show" :class="{'hidden': !show, 'block':show }">
+
+										<img src="images/hide_icon.png" alt="" class="h-6 text-gray-700" fill="none"
+											@click="show = !show" :class="{'block': !show, 'hidden':show }">
+									</div>
+								</div>
+							</div>
+							<!-- input field:4 -->
+							<div class="my-3" x-data="{ show: true }">
+								<div class="relative">
+									<input placeholder="Repeat Password" :type="show ? 'password' : 'text'"
+										class="text-md pl-10 block px-3 py-2 rounded-[46px] w-full  bg-white border-2 border-gray-200   focus:border-indigo-500    focus:outline-none">
+									<div
+										class="password_view_hide inset-y-0 right-0 pr-3 flex items-center text-sm leading-5">
+										<img src="images/View_icon.png" alt="" class="h-6 text-gray-700" fill="none"
+											@click="show = !show" :class="{'hidden': !show, 'block':show }">
+										<img src="images/hide_icon.png" alt="" class="h-6 text-gray-700" fill="none"
+											@click="show = !show" :class="{'block': !show, 'hidden':show }">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- button -->
+						<div class="flex gap-5 btns mt-6">
+							<!-- signup button -->
+							<a class=" blue_btn_b " href="#"> SignUp </a>
+							<!--  signIn button -->
+							<a class="gray_white_btn " href="#"> SignIn </a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- section-5: Trending stocks -->
+	<div class="container trending_sec  mx-auto my-28 bg-c">
+		<!-- title -->
+		<div class="trending_top_sec flex justify-between items-center flex-col md:flex-row my-4">
+			<div class="max-w-[461px]">
+				<h2 class=" my-4">Trending stocks</h2>
+			</div>
+			<div class="flex justify-end w-full  md:w-[468px] my-4">
+				<div
+					class="relative flex items-center p w-full h-[54px] rounded-full focus-within:shadow-lg bg-white overflow-hidden">
+					<div class="grid place-items-center h-full w-12 text-gray-300 ml-4">
+						<img src="images/search_logo.png" alt="" class="">
+					</div>
+					<input class="peer h-full w-full outline-none text-base text-gray-700 pl-2 pr-2" type="text"
+						id="search" placeholder="Start stocks...">
+				</div>
+			</div>
+		</div>
+		<!-- cards -->
+		<div class="trending_bottom_sec grid gap-8 grid-cols-1  md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 bg-c">
+			<!-- card:1 Tesla -->
+			<div class="single-features-box  sm:border-0 sm:p-0 text-center sm:text-left">
+				<div
+					class="icon rounded-2xl bg-white text-center flex justify-between items-center flex-wrap py-8 px-4 relative ml-auto  sm:ml-0 ">
+					<div class="left_part flex justify-between items-center ">
+						<img src="images/trending_stock_tesla_logo.png" alt="">
+						<div class="flex flex-col justify-between  ml-2 text-start">
+							<h5 class="">Tesla</h5>
+							<h6 class="">TSLA</h6>
+						</div>
+					</div>
+					<div class=" right_part flex justify-between items-end flex-col">
+						<h4 class="">227 $</h4>
+						<div class="flex flex-row justify-between mt-2 ml-2 text-start">
+							<h6 class="mr-4">- 2.3%</h6>
+							<img src="images/trending_stock_tesla_stats.png" alt="" class=" hidden sm:inline-block">
+							<img src="images/trending_stock_tesla_stats_mb.png" alt="" class=" inline-block sm:hidden">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- card:2 amazon -->
+			<div class="single-features-box  sm:border-0 sm:p-0 text-center sm:text-left">
+				<div
+					class="icon rounded-2xl bg-white text-center flex justify-between items-center flex-wrap py-8 px-4 relative ml-auto  sm:ml-0 ">
+					<div class="left_part flex justify-between items-center">
+						<img src="images/trending_stock_amazon_logo.png" alt="">
+						<div class="flex flex-col justify-between  ml-2 text-start">
+							<h5 class="">Amazon</h5>
+							<h6 class="">AMZN</h6>
+						</div>
+					</div>
+					<div class=" right_part flex justify-between items-end flex-col">
+						<h4 class="">116 $</h4>
+						<div class="flex flex-row justify-between mt-2 ml-2 text-start">
+							<h6 class=" mr-4">+ 1.08%</h6>
+							<img src="images/trending_stock_amazon_stats.png" alt="" class=" hidden sm:inline-block">
+							<img src="images/trending_stock_amazon_stats_mb.png" alt="" class=" inline-block sm:hidden">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- card:3 meta -->
+			<div class="single-features-box  sm:border-0 sm:p-0 text-center sm:text-left">
+				<div
+					class="icon rounded-2xl bg-white text-center flex justify-between items-center flex-wrap py-8 px-4 relative ml-auto  sm:ml-0 ">
+					<div class="left_part flex justify-between items-center">
+						<img src="images/trending_stock_meta_logo.png" alt="">
+						<div class="flex flex-col justify-between  ml-2 text-start">
+							<h5 class="">Facebook</h5>
+							<h6 class="">FB</h6>
+						</div>
+					</div>
+					<div class=" right_part flex justify-between items-end flex-col">
+						<h4 class="">133 $</h4>
+						<div class="flex flex-row justify-between mt-2 ml-2 text-start">
+							<h6 class="mr-4">+ 3.36%</h6>
+							<img src="images/trending_stock_meta_stats.png" alt="" class=" hidden sm:inline-block">
+							<img src="images/trending_stock_meta_stats_mb.png" alt="" class=" inline-block sm:hidden">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- card:4 spotify -->
+			<div class="single-features-box  sm:border-0 sm:p-0 text-center sm:text-left">
+				<div
+					class="icon rounded-2xl bg-white text-center flex justify-between items-center flex-wrap py-8 px-4 relative ml-auto  sm:ml-0 ">
+					<div class="left_part flex justify-between items-center">
+						<img src="images/trending_stock_spotify_logo.png" alt="">
+						<div class="flex flex-col justify-between  ml-2 text-start">
+							<h5 class="">Spotify</h5>
+							<h6 class="">SPOT</h6>
+						</div>
+					</div>
+					<div class=" right_part flex justify-between items-end flex-col">
+						<h4 class="">89 $</h4>
+						<div class="flex flex-row justify-between mt-2 ml-2 text-start">
+							<h6 class=" mr-4">- 3.36%</h6>
+							<img src="images/trending_stock_spotify_stats.png" alt="" class=" hidden sm:inline-block">
+							<img src="images/trending_stock_spotify_stats_mb.png" alt=""
+								class=" inline-block sm:hidden">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- card:5 netflix -->
+			<div class="single-features-box  sm:border-0 sm:p-0 text-center sm:text-left">
+				<div
+					class="icon rounded-2xl bg-white text-center flex justify-between items-center flex-wrap py-8 px-4 relative ml-auto  sm:ml-0 ">
+					<div class="left_part flex justify-between items-center">
+						<img src="images/trending_stock_netflix_logo.png" alt="">
+						<div class="flex flex-col justify-between  ml-2 text-start">
+							<h5 class="">Netflix</h5>
+							<h6 class="">NFLX</h6>
+						</div>
+					</div>
+					<div class="right_part flex justify-between items-end flex-col">
+						<h4 class="">295 $</h4>
+						<div class="flex flex-row justify-between mt-2 ml-2 text-start">
+							<h6 class=" mr-4">+ 1.08%</h6>
+							<img src="images/trending_stock_netflix_stats.png" alt="" class=" hidden sm:inline-block">
+							<img src="images/trending_stock_netflix_stats_mb.png" alt=""
+								class=" inline-block sm:hidden">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- card:6 google -->
+			<div class="single-features-box  sm:border-0 sm:p-0 text-center sm:text-left">
+				<div
+					class="icon rounded-2xl bg-white text-center flex justify-between items-center flex-wrap py-8 px-4 relative  ml-auto  sm:ml-0 ">
+					<div class="left_part flex justify-between items-center">
+						<img src="images/trending_stock_google_logo.png" alt="">
+						<div class="flex flex-col justify-between  ml-2 text-start">
+							<h5 class="">Google C</h5>
+							<h6 class="">GOOG</h6>
+						</div>
+					</div>
+					<div class="right_part flex justify-between items-end flex-col">
+						<h4 class="text-sm sm:text-xl font-normal text-black">98 $</h4>
+						<div class="flex flex-row justify-between mt-2 ml-2 text-start">
+							<h6 class="mr-4">+ 1.08%</h6>
+							<img src="images/trending_stock_google_stats.png" alt="" class=" hidden sm:inline-block">
+							<img src="images/trending_stock_google_stats_mb.png" alt="" class=" inline-block sm:hidden">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- card:7 macDonald -->
+			<div class="single-features-box  sm:border-0 sm:p-0 text-center sm:text-left">
+				<div
+					class="icon rounded-2xl bg-white text-center flex justify-between items-center flex-wrap py-8 px-4 relative ml-auto  sm:ml-0 ">
+					<div class="left_part flex justify-between items-center">
+						<img src="images/trending_stock_macDonald_logo.png" alt="">
+						<div class="flex flex-col justify-between  ml-2 text-start">
+							<h5 class="">McDonald’s</h5>
+							<h6 class="">MCD</h6>
+						</div>
+					</div>
+					<div class="right_part flex justify-between items-end flex-col">
+						<h4 class="text-sm sm:text-xl font-normal text-black">256 $</h4>
+						<div class="flex flex-row justify-between mt-2 ml-2 text-start">
+							<h6 class="  mr-4">- 24%</h6>
+							<img src="images/trending_stock_macDonald_stats.png" alt="" class=" hidden sm:inline-block">
+							<img src="images/trending_stock_macDonald_stats_mb.png" alt=""
+								class=" inline-block sm:hidden">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- card:8 amazon cocacola -->
+			<div class="single-features-box  sm:border-0 sm:p-0 text-center sm:text-left">
+				<div
+					class="icon rounded-2xl bg-white text-center flex justify-between items-center flex-wrap py-8 px-4 relative  ml-auto  sm:ml-0 ">
+					<div class="left_part flex justify-between items-center">
+						<img src="images/trending_stock_cocacola_logo.png" alt="">
+						<div class="flex flex-col justify-between  ml-2 text-start">
+							<h5 class="">Amazon</h5>
+							<h6 class="">AMZN</h6>
+						</div>
+					</div>
+					<div class="right_part flex justify-between items-end flex-col">
+						<h4 class="text-sm sm:text-xl font-normal text-black">116 $</h4>
+						<div class="flex flex-row justify-between mt-2 ml-2 text-start">
+							<h6 class="mr-4">+ 2.3%</h6>
+							<img src="images/trending_stock_cocacola_stats.png" alt="" class=" hidden sm:inline-block">
+							<img src="images/trending_stock_cocacola_stats_mb.png" alt=""
+								class=" inline-block sm:hidden">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- section-6: Next Level -->
+	<div class="container mx-auto next_level_sec  my-36">
+		<!-- title -->
+		<div class=" top_part mb-16">
+			<h6 class="font-bold my-12 text-4xl leading-snug  2xl:text-[56px] lg:leading-[62px]">Next Level of Trading
+				with Our Bespoke Client Care and Asset Selection
+			</h6>
+		</div>
+		<!-- cards -->
+		<div class="bottom_part grid gap-6  grid-cols-1 sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-2 xl:grid-cols-3 ">
+			<!-- card:1  International recognised brand-->
+			<div
+				class="cards w-full px-2 pt-2 bg-white border border-gray-200 flex justify-between flex-col items-start  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+				<div class="p-5">
+					<h5 class="mb-2 ">International
+						recognised brand</h5>
+					<p class="mb-3 ">Accounts funds secure in Svenska
+						Handelsbanken AB Regulated by FCA <br>
+						(Great Britain financial supervisory authority)</p>
+				</div>
+				<img class="rounded-t-lg" src="images/international_brand.png" alt="" />
+			</div>
+			<!-- card:2  Copy Trading -->
+			<div
+				class="cards w-full px-2 pt-2 bg-white border border-gray-200 flex justify-between flex-col items-start  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+				<div class="p-5">
+					<h5 class="mb-2 ">Copy Trading</h5>
+					<p class="mb-3 ">Trade Mirroring for beginner trades <br>
+						Busy lifestyle & Never miss a Trade</p>
+				</div>
+				<img class="rounded-t-lg" class=" object-bottom" src="images/copy_trading.png" alt="" />
+			</div>
+			<!-- card:3  Premium care -->
+			<div
+				class="cards w-full px-2 pt-2 bg-white border border-gray-200 flex justify-between flex-col items-start rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+				<div class="p-5">
+					<h5 class="mb-2 ">Premium care</h5>
+					<p class="mb-3 ">Access to our dedicated support team in
+						their local language</p>
+				</div>
+				<img class="rounded-t-lg" class=" object-bottom" src="images/premium_care.png" alt="" />
+			</div>
+			<!-- card:4 Superior trading conditions -->
+			<div
+				class="cards w-full px-2 pt-2 bg-white border border-gray-200 flex justify-between flex-col items-start  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+				<div class="p-5">
+					<h5 class="mb-2 ">Superior
+						trading conditions</h5>
+					<p class="mb-3 ">Competitive spreads. <br>
+						Lightning speed execution on trades 99% fill rate
+						Multiple payment options for funding accounts
+						Razor sharp spreads from 0.0 pip spreads</p>
+				</div>
+				<img class="rounded-t-lg" src="images/superior_trading.png" alt="" />
+			</div>
+			<!-- card:5 Over 1000+ Assets -->
+			<div
+				class="cards w-full px-2 pt-2 bg-white border border-gray-200 flex justify-between flex-col items-start  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+				<div class="p-5">
+					<h5 class="mb-2 ">Over 1000+ Assets</h5>
+					<p class="mb-3 ">All major financial markets <br>
+						Professional tools for new traders and advance</p>
+				</div>
+				<img class="rounded-t-lg" class=" object-bottom" src="images/over_1000.png" alt="" />
+			</div>
+			<!-- card:6 Multi platform setups -->
+			<div
+				class="cards w-full px-2 pt-2 bg-white border border-gray-200 flex justify-between flex-col items-start rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+				<div class="p-5">
+					<h5 class="mb-2 ">Multi platform setups</h5>
+					<p class="mb-3 ">MT5 / VPS</p>
+				</div>
+				<img class="rounded-t-lg" class=" object-bottom" src="images/multi-platform.png" alt="" />
+			</div>
+		</div>
+	</div>
+
+
+	<!-- section-7: Nordic Values -->
+	<div class="container mx-auto nordic_values_sec my-20">
+		<div class="min-w-screen min-h-screen flex items-center justify-center  ">
+			<div class="bg-gray-100 text-gray-500  w-full overflow-hidden">
+				<div
+					class="flex md:w-full w-full flex flex-col justify-between items-center lg:flex-row xl:flex-row 2xl:flex-row">
+					<!-- left image -->
+					<div class="left_part md:inline-block w-auto lg:h-full bg-white   rounded-3xl">
+						<img src="images/nordic_values_FLAG.png" alt="">
+					</div>
+					<!--  right -->
+					<div
+						class="right_part w-auto flex flex-col justify-start items-center mt-8 lg:mt-0  xl:w-1/2 2xl:w-1/2 pl-8 2xl:pl-0 ">
+						<div class="right_part_div ">
+							<h5 class="pb-4">Nordic Values at the Heart of Our
+								Trading Platform</h5>
+							<h6 class="py-4 text-lg font-normal">Join a broker that values tradition, fairness, and
+								transparency in trading. </h6>
+							<p class="py-4 text-lg font-normal">At Nordic Markets, we incorporate Nordic values at all
+								levels of our trading platform to offer the fairest and cleanest practices to our
+								clients. From our commitment to transparency to our dedication to excellence, we're
+								proud to offer a trading experience that reflects our values. </p>
+							<!-- button -->
+							<a class="  blue_btn_b mt-10 " href="#">Buy account</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- section-8: Copy top investors -->
+	<div class="container mx-auto  copy_top_investor_sec my-20">
+		<!-- title -->
+		<div class="">
+			<h2 class="mb-16">Copy top
+				investors
+			</h2>
+		</div>
+		<!-- cards -->
+		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-9 mt-12 ">
+			<!-- card:1 -->
+			<div class="cards  aspiring_card bg-white hover:shadow-custom duration-300 rounded-[36px] ">
+				<img src="images/aspiring_trader.png" alt="">
+				<p class=" pt-6 sm:text-2xl text-xl leading-7 text-black font-normal">Pick from thousands of
+					aspiring traders showcasing their daily performance.</p>
+				<div class="btns flex items-center justify-end ">
+					<a class="blue_btn_b lg:mr-3  transition duration-200" href="#">Start Now</a>
+				</div>
+			</div>
+			<!-- card:2 -->
+			<div class="cards  hover:shadow-custom duration-300 rounded-[36px] " style="background: #EA3035;">
+				<img src="images/replicate.png" alt="">
+				<p class=" pt-6 sm:text-2xl text-xl leading-7 text-white font-normal">Replicate their steps in
+					real-time with a fixed percentage without moving a finger</p>
+				<div class="btns flex items-center justify-end ">
+					<a class=" py-6 mt-2 px-8 text-center w-[170px] sm:h-[70px]  text-base text-black font-bold  rounded-full bg-white w_btn_hover transition duration-200"
+						href="#">Start now</a>
+				</div>
+			</div>
+			<!-- card:3 -->
+			<div class="cards hover:shadow-custom duration-300 rounded-[36px] " style="background: #3C7EE2;">
+				<img src="images/fund.png" alt="">
+				<p class=" pt-6 sm:text-2xl text-xl leading-7 text-white font-normal">Get instant
+					notifications about closed deals and your returns. </p>
+				<div class="btns flex items-center justify-end ">
+					<a class=" py-6 mt-2 px-8 text-center w-[170px] sm:h-[70px]  text-base text-black font-bold  rounded-full bg-white w_btn_hover transition duration-200"
+						href="#">Start now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- section-9 Wide-range -->
+	<div class="container mx-auto  wide_range_sec">
+		<div class="wide_range grid grid-cols-1 rounded-[30px]">
+			<div class="wide_range_text hidden 2xl:inline-block xl:inline-block lg:inline-block py-[80px] px-10  ">
+				<h6 class="pb-10">Wide range of deposit and
+					withdrawal
+					methods in FIAT & Crypto</h6>
+				<!-- <a class=" py-4  px-8 bg-white hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-full  transition duration-200"
+					href="#">Learn more</a> -->
+				<a class="white_btn  transition duration-200" href="#">Start Now</a>
+			</div>
+			<!-- for mobile view -->
+			<div class=" lg:hidden py-[100px] px-10   bg-cover bg-center rounded-[30px]"
+				style="background-image: url('/images/wide_range_mobile.png');">
+				<h6 class="pb-10">Wide range of deposit and
+					withdrawal
+					methods in FIAT & Crypto</h6>
+				<!-- <a class=" py-4  px-8 bg-white hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-full border-4 border-solid transition duration-200"
+					href="#">Learn more</a> -->
+				<a class="white_btn  transition duration-200" href="#">Start Now</a>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- section-9: Diverse Stock Option -->
+	<div class="container mx-auto diverse_stock_sectrending_sec my-20">
+		<div class="min-w-screen min-h-screen flex items-center justify-center  py-5">
+			<div class="bg-gray-100 text-gray-500  w-full overflow-hidden">
+				<div class="flex md:w-full w-full flex flex-col  lg:flex-row xl:flex-row 2xl:flex-row grid grid-cols-12">
+					<!-- left -->
+					<div class=" w-auto flex flex-col justify-center items-center  col-span-6 py-10 px-5 md:px-10">
+						<div class=" mb-6">
+							<h1 class="font-bold text-3xl text-gray-900 font-bold">Diverse Stock Options for Your
+								Trading Portfolio</h1>
+							<p class="py-2 text-lg font-normal">Discover a broad range of hand-picked stocks to
+								diversify your investment strategy and achieve your financial goals. </p>
+							<p class="py-2 text-lg font-normal">At Nordic Markets, we provide a carefully curated
+								selection of topperforming stocks such as Tesla, Meta, Netflix, and McDonald's, with
+								more than 1000 assets available to choose from.
+								Our team of experts selects these stocks based on their market performance, potential
+								for growth, and stability, ensuring that your trading portfolio is diverse and tailored
+								to your individual needs. With us, you can trade with confidence and invest in stocks
+								that align with your financial goals. </p>
+							<!-- button -->
+							<div class=" mt-10">
+								<a class=" mt-12 text-center lg:mr-3 2xl:ml-0 xl:ml-0 md:ml-0 ml-2  py-4 px-8  bg-blue-600 hover:bg-blue-500  border-4 border-solid border-indigo-500 text-sm text-white font-medium rounded-full transition duration-200 "
+									href="#">Buy account</a>
+							</div>
+						</div>
+					</div>
+					<!-- right cards -->
+					<div class=" trending_bottom_sec col-span-6 ">
+						<!-- card:1 Tesla -->
+						<div class="cards  single-features-box  sm:border-0 sm:p-0 text-center sm:text-left">
+							<div
+								class="icon rounded-2xl bg-white text-center flex justify-between items-center flex-wrap py-8 px-4 relative ml-auto  sm:ml-0 ">
+								<div class="left_part flex justify-between items-center ">
+									<img src="images/trending_stock_tesla_logo.png" alt="">
+									<div class="flex flex-col justify-between  ml-2 text-start">
+										<h5 class="">Tesla</h5>
+										<h6 class="">TSLA</h6>
+									</div>
+								</div>
+								<div class=" right_part flex justify-between items-end flex-col">
+									<h4 class="">227 $</h4>
+									<div class="flex flex-row justify-between mt-2 ml-2 text-start">
+										<h6 class="mr-4">- 2.3%</h6>
+										<img src="images/trending_stock_tesla_stats.png" alt="" class=" hidden sm:inline-block">
+										<img src="images/trending_stock_tesla_stats_mb.png" alt="" class=" inline-block sm:hidden">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- card:2 meta -->
+						<div class="cards  single-features-box  sm:border-0 sm:p-0 text-center sm:text-left">
+							<div
+								class="icon rounded-2xl bg-white text-center flex justify-between items-center flex-wrap py-8 px-4 relative ml-auto  sm:ml-0 ">
+								<div class="left_part flex justify-between items-center">
+									<img src="images/trending_stock_meta_logo.png" alt="">
+									<div class="flex flex-col justify-between  ml-2 text-start">
+										<h5 class="">Facebook</h5>
+										<h6 class="">FB</h6>
+									</div>
+								</div>
+								<div class=" right_part flex justify-between items-end flex-col">
+									<h4 class="">133 $</h4>
+									<div class="flex flex-row justify-between mt-2 ml-2 text-start">
+										<h6 class="mr-4">+ 3.36%</h6>
+										<img src="images/trending_stock_meta_stats.png" alt="" class=" hidden sm:inline-block">
+										<img src="images/trending_stock_meta_stats_mb.png" alt="" class=" inline-block sm:hidden">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- card:3 netflix -->
+						<div class="cards  single-features-box  sm:border-0 sm:p-0 text-center sm:text-left">
+							<div
+								class="icon rounded-2xl bg-white text-center flex justify-between items-center flex-wrap py-8 px-4 relative ml-auto  sm:ml-0 ">
+								<div class="left_part flex justify-between items-center">
+									<img src="images/trending_stock_netflix_logo.png" alt="">
+									<div class="flex flex-col justify-between  ml-2 text-start">
+										<h5 class="">Netflix</h5>
+										<h6 class="">NFLX</h6>
+									</div>
+								</div>
+								<div class="right_part flex justify-between items-end flex-col">
+									<h4 class="">295 $</h4>
+									<div class="flex flex-row justify-between mt-2 ml-2 text-start">
+										<h6 class=" mr-4">+ 1.08%</h6>
+										<img src="images/trending_stock_netflix_stats.png" alt="" class=" hidden sm:inline-block">
+										<img src="images/trending_stock_netflix_stats_mb.png" alt=""
+											class=" inline-block sm:hidden">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- card:4 macDonald -->
+						<div class="cards  single-features-box  sm:border-0 sm:p-0 text-center sm:text-left">
+							<div
+								class="icon rounded-2xl bg-white text-center flex justify-between items-center flex-wrap py-8 px-4 relative ml-auto  sm:ml-0 ">
+								<div class="left_part flex justify-between items-center">
+									<img src="images/trending_stock_macDonald_logo.png" alt="">
+									<div class="flex flex-col justify-between  ml-2 text-start">
+										<h5 class="">McDonald’s</h5>
+										<h6 class="">MCD</h6>
+									</div>
+								</div>
+								<div class="right_part flex justify-between items-end flex-col">
+									<h4 class="text-sm sm:text-xl font-normal text-black">256 $</h4>
+									<div class="flex flex-row justify-between mt-2 ml-2 text-start">
+										<h6 class="  mr-4">- 24%</h6>
+										<img src="images/trending_stock_macDonald_stats.png" alt="" class=" hidden sm:inline-block">
+										<img src="images/trending_stock_macDonald_stats_mb.png" alt=""
+											class=" inline-block sm:hidden">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- footer -->
+	<div class=" mx-auto ">
+		<div class="rounded-t-3xl py-10 px-2 sm:px-10 bg-white">
+			<!-- footer_navbar -->
+			<nav
+				class="  relative h-fit px-5 lg:px-0 py-4 flex sm:flex-row flex-col flex-wrap justify-between items-start sm:items-center bg-white">
+				<!-- logo -->
+				<a class="text-3xl font-bold leading-none " href="#">
+					<img src="images/Logo_nordic.png" alt="">
+				</a>
+				<!-- social link  -->
+				<div class="flex inline-block sm:hidden mt-10 mb-4">
+					<div class="flex justify-between items-center flex-wrap   ">
+						<a href="#" class="px-4"><img src="images/facbook.png" alt=""></a>
+						<a href="#" class="px-4"><img src="images/instagram.png" alt=""></a>
+						<a href="#" class="px-4"><img src="images/youtube.png" alt=""></a>
+						<a href="#" class="px-4"><img src="images/twitter.png" alt=""></a>
+						<a href="#"><img src="images/linkedin.png" alt=""></a>
+					</div>
+				</div>
+				<!-- list -->
+				<ul class="navbar mx-0 sm:mx-auto flex flex-row flex-wrap justify-between items-center p-4 lg:p-0">
+					<li><a class="text-sm text-black mr-5 font-bold hover:text-gray-500 "
+							href="product.html">Products</a></li>
+					<li><a class="text-sm text-black mr-5 font-bold hover:text-gray-500" href="trading.html">Trading
+							Tools</a></li>
+					<li><a class="text-sm text-black mr-5 font-bold hover:text-gray-500"
+							href="platform.html">Platforms</a></li>
+					<li><a class="text-sm text-black mr-5 font-bold hover:text-gray-500"
+							href="condition.html">Conditions</a></li>
+					<li><a class="text-sm text-black mr-5   font-bold hover:text-gray-500" href="help.html">Help</a>
+					</li>
+				</ul>
+
+				<!-- button -->
+				<div class="flex pt-2 sm:pt-10 text-center flex-wrap">
+					<a class="mr-3 text-center py-6 w-[165px] h-[70px] xl:w-[180px] xl:h-[70px] bg-black b_btn_hover text-sm text-white font-bold rounded-full transition duration-200 "
+						href="trading.html">Start Trading</a>
+					<a class="white_btn_b    text-center  w-[165px] h-[70px] xl:w-[180px] xl:h-[70px]   transition duration-200"
+						href="sigIn.html" id="">Log In</a>
+				</div>
+			</nav>
+			<!-- section -->
+			<div class="grid grid-flow-row-dense grid-cols-2 lg:grid-cols-3 mt-4 sm:mt-20 ">
+				<!-- paragraphs -->
+				<div
+					class="col-span-2 flex flex-col justify-between items-start order-2 lg:order-1 mt-12 lg:mt-0 text-sm text-black-400 pr-0 sm:pr-10 leading-5">
+					<p class="py-2 opacity-25">
+						Blackwell Global Investments Limited is a limited liability company registered in The
+						Bahamas with its registered office at 201 Church Street, Sandyport, P.O. Box N-3406, Nassau, NP,
+						The Bahamas. Company Number 201732 B. Blackwell Global Investments Limited is authorised and
+						regulated by the Securities Commission of The Bahamas, certificate number SIA-F215. TIN.
+						109226376 </p>
+					<p class="py-2 opacity-25">Forex and CFDs are complex instruments and come with a high risk of
+						losing money rapidly due to leverage. 60.00% of retail investor accounts lose money when trading
+						CFDs. You should
+						consider whether you understand how CFDs work and whether you can afford to take the high risk
+						of losing your money. </p>
+					<p class="py-2 opacity-25 mb-10"> The information on this site is not directed at residents of the
+						United States,Belgium, New Zealand, and is not intended for distribution to, or use by, any
+						person in any
+						country or jurisdiction where such distribution or use would be contrary to local law or
+						regulation.
+					</p>
+					<!-- copyright -->
+					<h6 class="pt-12 opacity-60 text-black font-normal text-sm">© Copyright 2022 Blackwell Global
+						Investments Limited. All rights
+						reserved.
+					</h6>
+				</div>
+				<!-- social link  -->
+				<div class="order-1 lg:order-2 hidden sm:inline-block">
+					<div class="flex justify-between items-center flex-wrap flex-end pl-0 lg:pl-56 ">
+						<a href="#"><img src="images/facbook.png" alt=""></a>
+						<a href="#"><img src="images/instagram.png" alt=""></a>
+						<a href="#"><img src="images/youtube.png" alt=""></a>
+						<a href="#"><img src="images/twitter.png" alt=""></a>
+						<a href="#"><img src="images/linkedin.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+</body>
+<!-- Import alpine Js Import Link for view and hide password -->
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+
+<!-- Import Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- custom JS link -->
+<script src="script.js"></script>
+
+</html>

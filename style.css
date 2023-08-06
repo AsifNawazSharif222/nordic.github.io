@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,600&display=swap');
+
+
+:root {
+    --main-blue-color: #3C7EE2;
+    --main-red-color: #EA3035;
+    --main-green-color: #1ED15E;
+    --main-yellow-color: #FFB71E;
+    --bg-white-gray-color: #F8F7F7;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --light-black-hover: rgba(255, 255, 255, 0.15);
+    --light-black-pressed: rgba(255, 255, 255, 0.25);
+    --border-white: 1px solid rgba(0, 0, 0, 0.1);
+    --border-black-hover: 1px dashed rgba(0, 0, 0, 0.2);
+    --border-black-pressed: 1px dashed rgba(0, 0, 0, 0.35);
+    --border-blue: 12px dashed rgba(255, 248, 248, 0.1);
+    --border-blue-hover: 12px dashed rgba(255, 255, 255, 0.15);
+}
+
+* {
+    font-family: 'Epilogue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    background-color: var(--bg-white-gray-color);
+    overflow-x: hidden !important;
+}
+
+.navbar .navbar_Con {
+    padding: 16px 0px;
+}
+
+.navbar .navbar_Con ul li a {
+    width: 73px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+}
+
+.black_btn {
+    width: 180px;
+height: 70px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #000000;
+    border-radius: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 23px 20px;
+}
+
+.white_btn_b {
+    width: 180px;
+height: 70px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    background: var(--white-color);
+    border: 6px solid rgba(151, 151, 151, 0.08);
+    border-radius: 1000px;
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 23px 40px;
+
+}
+
+.empowering_Cont{
+    margin: 0 auto;
+}
+
+.empowering_Cont .empowering-left-part h6 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 66px;
+    line-height: 76px;
+}
+
+.empowering_Cont .empowering-left-part p {
+    max-width: 561px;
+    margin-right: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #838383;
+}
+
+.white_btn {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    padding: 23px 31px;
+    width: 170px;
+    height: 70px;
+    background: #FFFFFF;
+    border-radius: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue_btn_b {
+    width: 170px;
+    height: 70px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 23px 31px;
+    background: #3C7EE2;
+    border: 6px solid rgba(255, 248, 248, 0.1);
+    border-radius: 1000px;
+}
+.empowering_Cont .home-image{
+position: relative;
+width: 1010px;
+    height: 755px;
+    right: 110px;
+}
+.empowering_Cont .empowering-left-part .empowering_text{
+    max-width:765px;
+    margin-left: auto;
+}
+.empowering_Cont .empowering-left-part .empowering_sec_btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.company_logos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    gap: 27px;
+}
+
+.choose_sec h2 {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 48px;
+
+}
+
+.green_btn {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #1ED15E;
+    border-radius: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gray_white_btn {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    border: 1px dashed rgba(0, 0, 0, 0.1);
+    border-radius: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue_btn_wb {
+    border: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
+.choose_sec .premium_sec {
+    background: #1E67C9;
+    border: 12px dashed rgba(0, 0, 0, 0.1);
+    border-radius: 48px;
+    padding: 0px 10px 10px 10px;
+}
+.choose_sec .premium_sec p{
+max-width: 371px;
+}
+.choose_sec .ecn_sec .ecn_top_sec,
+.standard_sec .standard_top_sec{
+    padding: 10px 40px;
+}
+.choose_sec .ecn_sec .ecn_top_sec h4,
+.standard_sec .standard_top_sec h4{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+.choose_sec .ecn_sec .ecn_top_sec p,
+.standard_sec .standard_top_sec p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+.choose_sec .ecn_sec ul,
+.choose_sec .standard_sec ul{
+    padding: 15px;
+}
+.choose_sec .ecn_sec ul li,
+.choose_sec .standard_sec ul li{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6A6873;
+}
+
+.choose_sec .ecn_sec p {
+   max-width: 418px;
+}
+.choose_sec .premium_sec ul li{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+}
+.choose_sec .premium_sec .premium_top_sec h4{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+.choose_sec .premium_sec .premium_top_sec p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.diversify_sec h2{
+    max-width: 595px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    color: #000000;
+}
+.diversify_sec h6{
+    max-width: 475px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    color: #0F0F0F;
+}
+.diversify_sec p{
+    max-width: 561px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #838383;
+}
+.diversify_sec .diversify_top_sec .right_card_sec{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.diversify_sec .diversify_top_sec .right_card_sec .tesla_card,
+.diversify_sec .diversify_bottom_sec .spotify_card{
+   width: 406px;
+   height: 333px;
+   background: #FFFFFF;
+box-shadow: 24px 24px 100px rgba(0, 0, 0, 0.1);
+border-radius: 46px;
+}
+.diversify_sec .diversify_top_sec .right_card_sec .tesla_card h4,
+.diversify_sec .diversify_top_sec .right_card_sec .fb_card h4,
+.diversify_sec .diversify_bottom_sec .spotify_card h4{
+    font-style: normal;
+font-weight: 700;
+font-size: 28.7143px;
+line-height: 20px;
+color: #000000;
+}
+.diversify_sec .diversify_top_sec .right_card_sec .tesla_card h4 span,
+.diversify_sec .diversify_top_sec .right_card_sec .fb_card h4 span,
+.diversify_sec .diversify_bottom_sec .spotify_card h4 span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.5714px;
+    line-height: 16px;
+    color: #000000;
+}
+.diversify_sec .diversify_top_sec .right_card_sec .tesla_card h6,
+.diversify_sec .diversify_top_sec .right_card_sec .fb_card h6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.1429px;
+    line-height: 18px;
+    text-align: right;
+    color: #FD443A;
+}
+.diversify_sec .diversify_top_sec .right_card_sec .fb_card{
+    width: 406px;
+    height: 333px;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+    border: 1px dashed rgba(0, 0, 0, 0.138194);
+    border-radius: 46px;
+}
+.diversify_sec .diversify_top_sec .right_card_sec .fb_card h6,
+.diversify_sec .diversify_bottom_sec .spotify_card h6{
+    color: #1CD760;
+}
+.diversify_sec .diversify_bottom_sec .blue_btn_b,
+.nordic_values_sec .right_part .blue_btn_b{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+}
+.diversify_sec .diversify_bottom_sec .gray_white_btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 63px;
+    mix-blend-mode: normal;
+border: 1px dashed rgba(151, 151, 151, 0.2);
+border-radius: 32px;
+font-weight: 500;
+}
+.diversify_sec .diversify_bottom_sec .right_card_sec{
+    margin-left: auto;
+}
+.open_account-sec .open_account-form_sec h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #000000;
+}
+.open_account-sec .open_account-form_sec p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px; 
+    color: #000000;
+    max-width: 546px;
+}
+.open_account-sec .open_account-form_sec .open_account-form input{
+    width: 620px;
+    height: 70px;
+    background: #FFFFFF;
+border: 1px dashed rgba(0, 0, 0, 0.05);
+border-radius: 46px;
+padding: 0px 32px;
+}
+.open_account-sec .open_account-form_sec .open_account-form .password_view_hide{
+position: absolute;
+right: 60px;
+}
+.open_account-sec .open_account-form_sec .btns a{
+    font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 16px;
+text-align: center;
+color: #FFFFFF;
+width: 290px;
+height: 70px;
+}
+.open_account-sec .open_account-form_sec .btns .gray_white_btn{
+    color: #000000;
+}
+.trending_sec .trending_top_sec h2{
+    font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 47px;
+color: #000000;
+}
+.trending_sec .trending_bottom_sec .left_part h5{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130.02%;
+    color: #000000;
+}
+.trending_sec .trending_bottom_sec .left_part h6{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130.02%;
+    color: #000000;
+}
+.trending_sec .trending_bottom_sec .right_part h4{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130.02%;
+    text-align: right;
+    color: #000000;
+}
+.trending_sec .trending_bottom_sec .right_part h6{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130.02%;
+    text-align: right;
+    color: #EA3035;
+}
+
+.next_level_sec .top_part{
+max-width: 821px;
+}
+.next_level_sec .top_part h6{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 130.02%;
+    color: #000000;
+}
+.next_level_sec .bottom_part .cards h5{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 140%;
+    color: #000000;
+}
+.next_level_sec .bottom_part .cards p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #6A6873;
+    max-width: 360px;
+}
+.nordic_values_sec .left_part{
+    padding: 36px;
+}
+.nordic_values_sec .right_part .right_part_div{
+    max-width: 613px;
+    margin-right: auto;
+}
+.nordic_values_sec .right_part h5{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    color: #000000;
+}
+.nordic_values_sec .right_part h6{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;  
+    color: #0F0F0F;
+    max-width: 475px;
+}
+.nordic_values_sec .right_part p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #838383;
+    max-width: 561px;
+}
+
+.copy_top_investor_sec  h2{
+    font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+color: #000000;
+}
+.copy_top_investor_sec  .cards{
+    padding: 60px 64px;
+    max-width: 488px;
+    height: 610px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.copy_top_investor_sec  .cards p{
+    font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 160%;
+color: #FFFFFF;
+}
+.copy_top_investor_sec .aspiring_card p{
+    color: #000000;
+
+}
+.copy_top_investor_sec  .cards .btns{
+    max-width: 185px;
+    margin-left: auto;
+}
+.wide_range_sec .wide_range{
+    background: #3C7EE2;
+    background-image: url(/images/wide_range.png);
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: right;
+}
+.wide_range_sec .wide_range .wide_range_text{
+    padding: 62px 100px;
+}
+.wide_range_sec .wide_range .wide_range_text h6{
+    max-width: 581px;
+    font-style: normal;
+font-weight: 700;
+font-size: 44px;
+line-height: 140%;
+color: #FFFFFF;
+}
+.diverse_stock_sec .left_part{
+    
+}
+.diverse_stock_sec .right_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.diverse_stock_sec .right_part .cards{
+    max-width: 744px;
+}
+
+@media (max-width: 1280px) {
+    .black_btn {
+        width: max-content;
+        font-size: 14px;
+        padding: 25px 20px;
+    }
+
+    .white_btn_b {
+        width: max-content;
+        font-size: 13px;
+        padding: 15px 40px;
+        margin-left: 0px;
+    }
+    .empowering_Cont .empowering-left-part .empowering_text {
+        max-width: inherit;
+        padding-top: 20px;
+    }
+    .empowering_Cont .home-image  {
+        width: auto ;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 1536px) { 
+    .empowering_Cont .empowering-left-part h6 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 66px;
+    }
+    .empowering_Cont .home-image{
+        position: relative;
+        width: 611px;
+        height: 640px;
+        right: 0px;
+        }
+}
+
+@media (min-width: 1023.98px) and (max-width: 1279.98px){
+    .nordic_values_sec .right_part h5 {
+        font-size: 44px;
+        line-height: 52px;
+    }
+    .nordic_values_sec .right_part h6,
+    .nordic_values_sec .right_part p{
+        padding: 5px 0px;
+    }
+}
